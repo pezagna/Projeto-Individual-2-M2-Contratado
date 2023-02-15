@@ -1,3 +1,21 @@
+##################################################################
+#  Projeto individual 2 - Módulo 2 - Contratando!                #
+#  Data de criação: 14/02/2023                                   #
+#  Criação e edição:  Robson da Silva                            #
+#  versão = '3.11' 64 bit                                        #
+#########################################################################################
+#                                                                                       #
+#     Contexto:                                                                         #
+#                                                                                       #
+#     Uma empresa de recrutamento recebeu muitos currículos                             #
+#   para determinadas vagas e agora precisa classificar                                 #
+#   quantos candidatos tem o perfil necessário e quantos                                #
+#   candidatos estão concorrendo a cada vaga específica.                                #
+#                                                                                       #
+#   Seguindo as informações do contexto, a seguinte linha de código foi projetada.      #
+#                                                                                       #
+#########################################################################################
+
 vaga1 = {}
 
 def cadastro():
