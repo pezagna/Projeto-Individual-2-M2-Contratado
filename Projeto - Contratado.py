@@ -31,10 +31,10 @@ def cadastro():
         vaga1.update({nome:curriculo})
         for chave,valor in vaga1.items():
             if "Python" and "programação" and "desenvolvimento" in valor:
-                print(f"\nO candidato {chave} está qualificado para a vaga")
+                print(f"\nCandidato {chave} está qualificado para a vaga")
                 aproved.update({chave:valor})
             else:
-                print(f"\nO candidato {chave} não está qualificado para a vaga.")
+                print(f"\nCandidato {chave} não está qualificado para a vaga.")
                 notaproved.update({nome:curriculo})
                 
             
@@ -52,10 +52,10 @@ def cadastro2():
         vaga2.update({nome:curriculo})
         for chave,valor in vaga2.items():
             if "Análise de dados" and "dados" and "SQL" in valor:
-                print(f"\nO candidato {chave} está qualificado para a vaga.\n")
+                print(f"\nCandidato {chave} está qualificado para a vaga.\n")
                 aproved2.update({chave:valor})
             else:
-                print(f"O candidato {chave} não está qualificado para a vaga.\n")
+                print(f"Candidato {chave} não está qualificado para a vaga.\n")
                 notaproved2.update({nome:curriculo})
                 
         continuar = int(input("Digite 1 para continuar. Digitte 0 para encerrar: "))
@@ -122,11 +122,13 @@ def menu(): #Menu Principal
             print(f"\nLista de candidatos aprovados para a Vaga 1 - Requisitos: Python, Programação, Desenvolvimento.")
             for chave,valor in aproved.items():
                 print(f"Candidato aprovado:\nNome: {chave}\nCurrículo: {valor}\n")
-            print(f"Quantidade de candidatos aprovados para vaga 1: {len(aproved)} ")
-            print(f"\nLista de candidatos aprovados para a Vaga 2:")
+            print(f"Quantidade de candidatos aprovados: {len(aproved)} ")
+            print("="*200)
+            print(f"\nLista de candidatos aprovados para a Vaga 2: Requisitos: Análise de dados, Dados, SQL.")
             for chave,valor in aproved2.items():
                 print(f"\nCandidato aprovado:\nNome: {chave}\nCurrículo: {valor}\n")            
-            print(f"Quantidade de candidatos aprovados para vaga 2: {len(aproved2)} ")
+            print(f"Quantidade de candidatos aprovados: {len(aproved2)} ")
+            print("="*200)
         elif(opcao==4):
             print("\n""Aplicativo encerrado.\n")
             break
