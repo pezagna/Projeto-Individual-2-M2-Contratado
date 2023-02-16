@@ -19,7 +19,8 @@
 vaga1 = {}
 aproved = {}
 notaproved= {}
-
+keywords = "Python" or "python" and "Programação" or "programação" and "Desenvolvimento" or "desenvolvimento"
+keywords2 = "Ánalise de dados" or "ánalise de dados" and "Dados" or "dados" and "SQL" or "Sql"
 vaga2 = {}
 aproved2 = {}
 notaproved2 = {}
@@ -30,14 +31,12 @@ def cadastro():
         curriculo = input("Envie o currículo do candidato: ")
         vaga1.update({nome:curriculo})
         for chave,valor in vaga1.items():
-            if "Python" and "programação" and "desenvolvimento" in valor:
+            if keywords in valor:
                 print(f"\nCandidato {chave} está qualificado para a vaga")
                 aproved.update({chave:valor})
             else:
                 print(f"\nCandidato {chave} não está qualificado para a vaga.")
                 notaproved.update({nome:curriculo})
-                
-            
         continuar = int(input("\nDigite 1 para continuar. Digitte 0 para encerrar: "))
     for chave,valor in aproved.items():
         print(f"\nCandidato aprovado:\nNome: {chave}\nCurrículo: {valor}\n")
@@ -51,13 +50,12 @@ def cadastro2():
         curriculo = input("Envie o currículo do candidato: ")
         vaga2.update({nome:curriculo})
         for chave,valor in vaga2.items():
-            if "Análise de dados" and "dados" and "SQL" in valor:
+            if keywords2 in valor:
                 print(f"\nCandidato {chave} está qualificado para a vaga.\n")
                 aproved2.update({chave:valor})
             else:
-                print(f"Candidato {chave} não está qualificado para a vaga.\n")
+                print(f"\nCandidato {chave} não está qualificado para a vaga.\n")
                 notaproved2.update({nome:curriculo})
-                
         continuar = int(input("Digite 1 para continuar. Digitte 0 para encerrar: "))
     for chave,valor in aproved2.items():
         print(f"\nCandidato aprovado:\nNome: {chave}\nCurrículo: {valor}\n")
@@ -84,6 +82,7 @@ def menuvaga1():
             break
         else:
             print ("\n""Opcão inválida, tente novamente.")
+            
 def menuvaga2():
     opcao=0
     while opcao !="3":
@@ -108,7 +107,7 @@ def menuvaga2():
 def menu(): #Menu Principal
     opcao=0
     while opcao !="3":
-        print("\n     Selecione a vaga desejada: ""\n""\n""1. Vaga 1: Python, Programação, Desenvolvimento""\n""2. Vaga 2: Análise de dados, Dados, SQL" "\n""3. Listar todos os candidatos" "\n""4. Sair")
+        print("\n     Selecione a vaga desejada: ""\n""\n""1. Vaga 1: Python, Programação, Desenvolvimento""\n""2. Vaga 2: Análise de dados, Dados, SQL" "\n""3. Listar todos os candidatos aprovados" "\n""4. Sair")
         try :
             opcao = int(input("\n""Opção: "))
         except:
@@ -117,7 +116,7 @@ def menu(): #Menu Principal
         if  (opcao==1):
             menuvaga1()
         elif(opcao==2):
-            cadastro2()
+            menuvaga2()
         elif(opcao==3):
             print(f"\nLista de candidatos aprovados para a Vaga 1 - Requisitos: Python, Programação, Desenvolvimento.")
             for chave,valor in aproved.items():
