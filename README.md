@@ -13,9 +13,15 @@ pessoas têm as palavras-chave necessárias no currículo.
 Para isso, nosso código Python vai checar para qual vaga a
 pessoa se inscreveu e o resumo que a pessoa enviou em
 busca dessas informações.
+As palavras-chave das vagas são:
+◼ Vaga 1: Python, Programação, Desenvolvimento;
+◼ Vaga 2: Análise de dados, Dados, SQL
 
-Ao iniciar o programa, o usuário selecionará a vaga desejada e irá dar entrada nas informações solicitadas.
-     Selecione a vaga desejada: 
+Como usar:
+
+Ao iniciar o programa, o usuário selecionará a vaga desejada e irá dar entrada nas informações solicitadas. Ao terminar o cadastro das vagas, o usuário poderá selecionar a opção "listar candidatos" para verificar os candidatos qualificados para a vaga.
+    
+    Selecione a vaga desejada: 
 
 1. Vaga 1: Python, Programação, Desenvolvimento
 2. Vaga 2: Análise de dados, Dados, SQL        
@@ -32,7 +38,7 @@ Programadora ousada com conhecimentos de C#, C++ e Python. Recém formada em TI 
 
 Nome: Eiki Batista
 
-Assistente Administrativo Comercial Pleno. Análise, monitoramento e acompanhamento da carteira de clientes chaves, para controle de vendas e acompanhamento de satisfação. Elaboração e emissão de planilhas e relatórios gerenciais. Atendimento e suporte aos vendedores e representantes externos. Organização de rotinas comerciais. Analise de contrato de clientes chave
+Assistente Administrativo Comercial Pleno. Análise, monitoramento e acompanhamento da carteira de clientes chaves, para controle de vendas e acompanhamento de satisfação. Elaboração e emissão de planilhas e relatórios gerenciais. Atendimento e suporte aos vendedores e representantes externos. Organização de rotinas comerciais. Analise de contrato de clientes chave.
 
 
 Candidato para Vaga 2:
